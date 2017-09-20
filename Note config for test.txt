@@ -1,0 +1,13 @@
+Note config for test
++/ SSH
+	Check nơi cài đặt GIT; Lệnh kiểm tra vi tri tren local 
+		$ cd / && pwd -W
+		C:/Program Files (x86)/Git
+	(vd: C:/Users/nghia.nguyen/AppData/Local/Programs/Git/bin
+	 or C:/Program Files/Git/bin)
+	 
++/ Gặp lỗi không tìm thấy vị trí GIT.exe
+	Vào Jenkin >> Global Tool Configuration 
+	Tìm đến vùng GIT / Git installations 
+	Đặt lại path đúng vào 	Path to Git executable
+	

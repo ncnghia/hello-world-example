@@ -1,0 +1,71 @@
+﻿Tìm hiểu về bắt đầu Web Service Testing
+1. Thế nào là Web Service Testing
+	Web Service Testing là kiểm thử các dịch vụ Web và 
+
+Kiến thức cơ bản
+	Protocol là gì ?
+		Protocol chính là những luật lệ được chấp nhận để 2 máy tính có thể nói chuyện với nhau 
+		Để giao tiếp có hiệu quả cao, server phải biết chính xác cách mà client sắp xếp cấu trúc message nó gửi lên thế nào.
+	HTTP hoạt động thế nào
+		API được xây dựng dựa trên chính 2 thành phần: request và response. Cuộc sống của HTTP xoay quanh 2 thành phần request và response. Client gửi request và server gửi lại response.
+		Mô tả thành phần của request
+			Một request đúng chuẩn gồm 4 phần:
+			. URL
+				URL là địa chỉ duy nhất cho một đối tượng (có thể là web page, image hoặc video), API mở rộng ý tưởng gốc của URL cho những đối tượng như customers, products. Và như thế client dễ dàng cho server biết yêu cầu mong muốn, những cái này còn được gọi chung là "resource" - nguồn lực
+			. Method
+				Method là hành động client muốn tác động lên "resource".
+				Có 4 loại method hay được dùng:
+				 > GET: Yêu cầu server đưa lại resource;
+				 > POST: Yêu cầu server tạo ra một resource mới;
+				 > PUT: Yêu cầu server cho sửa/thêm vào resource đã có trên hệ thống;
+				 > DELETE: Yêu cầu server cho xóa một resource;
+			. Headers
+				Headers là nơi chứa các thông tin cần thiết của 1 request nhưng end-users không biết có sự tồn tại của nó. Ví dụ: độ dài của request body, thời gian gửi request, loại thiết bị đang sử dụng, loại định dạng cái response mà client có đọc được…
+			. Body
+				Body là nơi chứa thông tin mà client sẽ điền. 
+		Mô tả thành phần của response
+			Khi nhận được request từ phía client, server sẽ xử lý request đó và gửi ngược về cho client thông tin response. Cấu trúc response tương đối giống phần request nhưng Status sẽ thay thế cho URL và Method. Nó có 3 phần như sau
+			. Status Code
+				Status Code là những con số có 3 chữ số và có duy nhất 1 ý nghĩa. Ví dụ như "404 Not Found" hoặc "503 Service unavailable" ...
+				(xem list tại https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
+			. Headers
+				Tương đối giống với request
+			. Body
+				Tương đối giống với request
+	Định dạng dữ liệu JSON và XML
+		JSON
+			D:\DOC\JSON.docx
+		XML
+			D:\DOC\XML.docx
+	Định dạng dữ liệu được sử dụng như thế nào trong HTTP.
+			D:\DOC\How used to format data in HTTP.docx
+
+Phần quy trình post bugs
+	Mô hình DevOps (Jenkin test - pipeline)
+		Jenkin là gì 
+			Jenkin là một máy chủ tích hợp liên tục có thể mở rộng. Nó build và test phần mềm của bạn một cách liên tục, theo dõi sự thi hành và trạng thái của các remote jobs. Nó giúp cho team members và users thường xuyên có được code chạy ổn định.
+		
+		
+		Kết hợp giữa kết quả test manual/automation từ DevOps với Jira Scrum software
+			Cài đặt Tomcat 8 (nhớ chọn cái Windows Installer)
+			Cài đặt Jenkin trên windows (download tại https://jenkins.io/)
+			Cài đặt GIT
+			Cài đặt cURL (trường hợp chạy trên win)
+			Commit file GitHub bằng GUI hoặc Bash
+			Các thiết định cần kiểm tra
+				Tham khảo file "Note config for test.txt"
+			Link tham khảo việc cài đặt 								  https://code4shares.wordpress.com/2016/07/01/xay-dung-he-thong-continous-integration-voi-jenkins-phan-1/
+		
+		Pipeline là gì 
+		
+		Tạo project pipeline
+		
+Cách thực hiện tạo TC trên SoapUI
+
+Tìm hiểu về POSTMAN
+	API là gì ?
+	API là một môi trường tương tác giữa các chương trình. Các API sử dụng HTTP hoặc HTTPS bị gọi bởi các Web API.
+	Nhìn rộng trên môi trường Internet
+	https://www.sitepoint.com/api-building-and-testing-made-easier-with-postman/
+
+
